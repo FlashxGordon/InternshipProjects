@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="b7bc0f55-7a63-4724-9706-624927deae45" name="library_management" url="jdbc:postgresql://localhost:5432/library_management" driverClass="org.postgresql.Driver" />
+    </data-sources>
+  </component>
+</project>

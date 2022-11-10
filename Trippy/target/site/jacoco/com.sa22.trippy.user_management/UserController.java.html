@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">trippy</a> &gt; <a href="index.source.html" class="el_package">com.sa22.trippy.user_management</a> &gt; <span class="el_source">UserController.java</span></div><h1>UserController.java</h1><pre class="source lang-java linenums">package com.sa22.trippy.user_management;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(&quot;api/user&quot;)
+public class UserController {
+
+    private final UserServiceImpl userServiceImpl;
+
+<span class="fc" id="L15">    UserController(UserServiceImpl userServiceImpl) {</span>
+<span class="fc" id="L16">        this.userServiceImpl = userServiceImpl;</span>
+<span class="fc" id="L17">    }</span>
+
+    @GetMapping(&quot;/all_users&quot;)
+    private @ResponseBody ResponseEntity&lt;List&lt;?&gt;&gt; getAllUsers() {
+<span class="nc" id="L21">        return ResponseEntity.ok(userServiceImpl.getAllUsers());</span>
+    }
+
+
+    @GetMapping(&quot;/user_id/{userId}&quot;)
+    public ResponseEntity&lt;?&gt; findUserById(@PathVariable int userId) {
+<span class="nc" id="L27">        User userRetrieved = userServiceImpl.findUserById(userId);</span>
+<span class="nc" id="L28">        return new ResponseEntity&lt;User&gt;(userRetrieved, HttpStatus.OK);</span>
+    }
+
+
+    @GetMapping(&quot;/user_email/{userEmail}&quot;)
+    public ResponseEntity&lt;?&gt; findUserByEmail(@PathVariable String userEmail) {
+<span class="nc" id="L34">        User userRetrieved = userServiceImpl.findUserByEmail(userEmail);</span>
+<span class="nc" id="L35">        return new ResponseEntity&lt;User&gt;(userRetrieved, HttpStatus.OK);</span>
+    }
+
+
+    @GetMapping(&quot;/user_name/{userName}&quot;)
+    public ResponseEntity&lt;?&gt; findUserByUserName(@PathVariable String userName) {
+<span class="nc" id="L41">        User userRetrieved = userServiceImpl.findUserByUserName(userName);</span>
+<span class="nc" id="L42">        return new ResponseEntity&lt;User&gt;(userRetrieved, HttpStatus.OK);</span>
+    }
+
+    @PostMapping(&quot;/new_user&quot;)
+    public ResponseEntity&lt;?&gt; userInsert(@RequestBody User user) {
+<span class="nc" id="L47">        User userInserted = userServiceImpl.userInsert(user);</span>
+<span class="nc" id="L48">        return new ResponseEntity&lt;User&gt;(userInserted, HttpStatus.CREATED);</span>
+
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

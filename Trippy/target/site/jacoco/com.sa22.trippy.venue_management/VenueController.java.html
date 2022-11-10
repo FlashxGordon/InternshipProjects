@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VenueController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">trippy</a> &gt; <a href="index.source.html" class="el_package">com.sa22.trippy.venue_management</a> &gt; <span class="el_source">VenueController.java</span></div><h1>VenueController.java</h1><pre class="source lang-java linenums">package com.sa22.trippy.venue_management;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+
+@RestController
+@RequestMapping(&quot;api/venue&quot;)
+public class VenueController {
+
+
+    private final VenueServiceImpl venueServiceImpl;
+
+<span class="fc" id="L17">    public VenueController(VenueServiceImpl venueServiceImpl) {</span>
+<span class="fc" id="L18">        this.venueServiceImpl = venueServiceImpl;</span>
+<span class="fc" id="L19">    }</span>
+
+    @GetMapping(&quot;/all_venues&quot;)
+    public @ResponseBody ResponseEntity&lt;List&lt;Venue&gt;&gt; getAllVenues() {
+<span class="nc" id="L23">        return ResponseEntity.ok(venueServiceImpl.getAllVenues());</span>
+    }
+
+    @GetMapping(&quot;/average_rating/{venueId}&quot;)
+    public ResponseEntity&lt;Double&gt; getAverageRating(@PathVariable int venueId) {
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        if (venueId &lt; 1) {</span>
+<span class="nc" id="L29">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L31">        Double ratingRetrieved = venueServiceImpl.getAverageRating(venueId);</span>
+<span class="nc" id="L32">        return new ResponseEntity&lt;Double&gt;(ratingRetrieved, HttpStatus.OK);</span>
+    }
+
+
+    @GetMapping(&quot;/venue_type/{venueType}&quot;)
+    public List&lt;Venue&gt; getVenueByType(@PathVariable String venueType) {
+<span class="nc" id="L38">        return venueServiceImpl.getVenueByType(venueType);</span>
+    }
+
+
+    @GetMapping(&quot;/venue_city/{venueCity}&quot;)
+    public List&lt;Venue&gt; getVenueByCity(@PathVariable String venueCity) {
+<span class="nc" id="L44">        return venueServiceImpl.getVenueByCity(venueCity);</span>
+    }
+
+    @PostMapping(&quot;/new_venue&quot;)
+    public ResponseEntity&lt;?&gt; insertVenue(@RequestBody Venue venue) {
+<span class="nc" id="L49">        Venue venueInserted = venueServiceImpl.insertVenue(venue);</span>
+<span class="nc" id="L50">        return new ResponseEntity&lt;Venue&gt;(venueInserted, HttpStatus.CREATED);</span>
+
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

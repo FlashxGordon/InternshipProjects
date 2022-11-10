@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReviewController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">trippy</a> &gt; <a href="index.source.html" class="el_package">com.sa22.trippy.review_management</a> &gt; <span class="el_source">ReviewController.java</span></div><h1>ReviewController.java</h1><pre class="source lang-java linenums">package com.sa22.trippy.review_management;
+
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(&quot;api/review&quot;)
+public class ReviewController {
+
+    private final ReviewServiceImpl reviewServiceImpl;
+
+<span class="fc" id="L13">    ReviewController(ReviewServiceImpl reviewServiceImpl) {</span>
+<span class="fc" id="L14">        this.reviewServiceImpl = reviewServiceImpl;</span>
+<span class="fc" id="L15">    }</span>
+
+    @GetMapping(&quot;/all_reviews&quot;)
+    public List&lt;ReviewDto&gt; findAllReviews() {
+<span class="nc" id="L19">        return reviewServiceImpl.getAllReviews();</span>
+    }
+
+    @GetMapping(&quot;/{id}&quot;)
+    public Review getReviewById(@PathVariable int id) {
+<span class="nc" id="L24">        return reviewServiceImpl.getReviewById(id);</span>
+    }
+
+    @PostMapping(&quot;/review_new&quot;)
+    public boolean insertReview(@RequestBody Review review){
+
+<span class="nc" id="L30">        int id = 0;</span>
+
+<span class="nc" id="L32">        return reviewServiceImpl.insertReview(review);</span>
+    }
+
+    @PutMapping(&quot;/{id}&quot;)
+    public String updateReview(@RequestBody ReviewDto reviewDto, @PathVariable int id) {
+<span class="nc" id="L37">        return reviewServiceImpl.updateReview(reviewDto, id) + &quot; number of rows updated in TABLE review_table.&quot;;</span>
+    }
+
+    @DeleteMapping(&quot;/{id}&quot;)
+    public String deleteReview(@PathVariable int id) {
+<span class="nc" id="L42">        return reviewServiceImpl.deleteReview(id) + &quot; number of rows deleted from TABLE review_table.&quot;;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

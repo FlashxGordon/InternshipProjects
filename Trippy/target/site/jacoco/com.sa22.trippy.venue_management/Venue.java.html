@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Venue.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">trippy</a> &gt; <a href="index.source.html" class="el_package">com.sa22.trippy.venue_management</a> &gt; <span class="el_source">Venue.java</span></div><h1>Venue.java</h1><pre class="source lang-java linenums">package com.sa22.trippy.venue_management;
+
+public class Venue {
+
+    private int venueId;
+    private String venueName;
+    private String venueType;
+    private String venueCity;
+    private String venueAddress;
+    private String venueEmail;
+    private String venuePhone;
+
+
+    public Venue(int venueId, String venueName, String venueType, String venueCity,
+<span class="nc" id="L15">                 String venueAddress, String venueEmail, String venuePhone) {</span>
+<span class="nc" id="L16">        this.venueId = venueId;</span>
+<span class="nc" id="L17">        this.venueName = venueName;</span>
+<span class="nc" id="L18">        this.venueType = venueType;</span>
+<span class="nc" id="L19">        this.venueCity = venueCity;</span>
+<span class="nc" id="L20">        this.venueAddress = venueAddress;</span>
+<span class="nc" id="L21">        this.venueEmail = venueEmail;</span>
+<span class="nc" id="L22">        this.venuePhone = venuePhone;</span>
+<span class="nc" id="L23">    }</span>
+
+    public Venue(String venueName, String venueType, String venueCity,
+<span class="nc" id="L26">                 String venueAddress, String venueEmail, String venuePhone) {</span>
+<span class="nc" id="L27">        this.venueName = venueName;</span>
+<span class="nc" id="L28">        this.venueType = venueType;</span>
+<span class="nc" id="L29">        this.venueCity = venueCity;</span>
+<span class="nc" id="L30">        this.venueAddress = venueAddress;</span>
+<span class="nc" id="L31">        this.venueEmail = venueEmail;</span>
+<span class="nc" id="L32">        this.venuePhone = venuePhone;</span>
+<span class="nc" id="L33">    }</span>
+
+<span class="nc" id="L35">    public Venue(int venue_rating) {</span>
+<span class="nc" id="L36">    }</span>
+
+    public int getVenueId() {
+<span class="nc" id="L39">        return venueId;</span>
+    }
+
+    public void setVenueId(int venueId) {
+<span class="nc" id="L43">        this.venueId = venueId;</span>
+<span class="nc" id="L44">    }</span>
+
+    public String getVenueName() {
+<span class="nc" id="L47">        return venueName;</span>
+    }
+
+    public void setVenueName(String venueName) {
+<span class="nc" id="L51">        this.venueName = venueName;</span>
+<span class="nc" id="L52">    }</span>
+
+    public String getVenueType() {
+<span class="nc" id="L55">        return venueType;</span>
+    }
+
+    public void setVenueType(String venueType) {
+<span class="nc" id="L59">        this.venueType = venueType;</span>
+<span class="nc" id="L60">    }</span>
+
+    public String getVenueCity() {
+<span class="nc" id="L63">        return venueCity;</span>
+    }
+
+    public void setVenueCity(String venueCity) {
+<span class="nc" id="L67">        this.venueCity = venueCity;</span>
+<span class="nc" id="L68">    }</span>
+
+    public String getVenueAddress() {
+<span class="nc" id="L71">        return venueAddress;</span>
+    }
+
+    public void setVenueAddress(String venueAddress) {
+<span class="nc" id="L75">        this.venueAddress = venueAddress;</span>
+<span class="nc" id="L76">    }</span>
+
+    public String getVenueEmail() {
+<span class="nc" id="L79">        return venueEmail;</span>
+    }
+
+    public void setVenueEmail(String venueEmail) {
+<span class="nc" id="L83">        this.venueEmail = venueEmail;</span>
+<span class="nc" id="L84">    }</span>
+
+    public String getVenuePhone() {
+<span class="nc" id="L87">        return venuePhone;</span>
+    }
+
+    public void setVenuePhone(String venuePhone) {
+<span class="nc" id="L91">        this.venuePhone = venuePhone;</span>
+<span class="nc" id="L92">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L96">        return &quot;Venue{&quot; +</span>
+                &quot;venueId=&quot; + venueId +
+                &quot;, venueName='&quot; + venueName + '\'' +
+                &quot;, venueType='&quot; + venueType + '\'' +
+                &quot;, venueCity='&quot; + venueCity + '\'' +
+                &quot;, venueAddress='&quot; + venueAddress + '\'' +
+                &quot;, venueEmail='&quot; + venueEmail + '\'' +
+                &quot;, venuePhone=&quot; + venuePhone +
+                '}';
+    }
+
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

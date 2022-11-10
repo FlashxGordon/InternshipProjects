@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">trippy</a> &gt; <a href="index.source.html" class="el_package">com.sa22.trippy.user_management</a> &gt; <span class="el_source">UserServiceImpl.java</span></div><h1>UserServiceImpl.java</h1><pre class="source lang-java linenums">package com.sa22.trippy.user_management;
+
+import com.sa22.trippy.exceptions.EmptyInputException;
+import com.sa22.trippy.user_management.interfaces.UserService;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+    private final UserRepositoryImpl userRepositoryImpl;
+
+<span class="fc" id="L15">    public UserServiceImpl(UserRepositoryImpl userRepositoryImpl) {</span>
+<span class="fc" id="L16">        this.userRepositoryImpl = userRepositoryImpl;</span>
+<span class="fc" id="L17">    }</span>
+
+    @Override
+    public User findUserById(int userId) {
+<span class="nc bnc" id="L21" title="All 4 branches missed.">        if (userRepositoryImpl.findUserById(userId) == null || userId &lt; 0) {</span>
+<span class="nc" id="L22">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L24">        return userRepositoryImpl.findUserById(userId);</span>
+    }
+
+
+    @Override
+    public User findUserByEmail(String userEmail) {
+<span class="nc bnc" id="L30" title="All 2 branches missed.">        if (userRepositoryImpl.findUserByEmail(userEmail) == null</span>
+<span class="nc bnc" id="L31" title="All 2 branches missed.">        ||!userRepositoryImpl.findUserByEmail(userEmail).toString().contains(&quot;@&quot;)) {</span>
+<span class="nc" id="L32">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L34">        return userRepositoryImpl.findUserByEmail(userEmail);</span>
+    }
+
+    @Override
+    public User findUserByUserName(String userName) {
+<span class="nc bnc" id="L39" title="All 2 branches missed.">        if (userRepositoryImpl.findUserByUserName(userName) == null) {</span>
+<span class="nc" id="L40">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L42">        return userRepositoryImpl.findUserByUserName(userName);</span>
+    }
+
+
+    @Override
+    public User userInsert(User user) {
+<span class="nc bnc" id="L48" title="All 4 branches missed.">        if (user.getUserName().isEmpty() || (user.getUserName().length() == 0)</span>
+<span class="nc bnc" id="L49" title="All 4 branches missed.">                || user.getUserEmail().isEmpty() || user.getUserCity().isEmpty()) {</span>
+<span class="nc" id="L50">            throw new EmptyInputException();</span>
+        }
+<span class="nc" id="L52">        return userRepositoryImpl.userInsert(user);</span>
+    }
+
+    public List&lt;User&gt; getAllUsers() {
+<span class="nc" id="L56">        return userRepositoryImpl.findAllUsers();</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VenueServiceImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">trippy</a> &gt; <a href="index.source.html" class="el_package">com.sa22.trippy.venue_management</a> &gt; <span class="el_source">VenueServiceImpl.java</span></div><h1>VenueServiceImpl.java</h1><pre class="source lang-java linenums">package com.sa22.trippy.venue_management;
+
+import com.sa22.trippy.exceptions.EmptyInputException;
+import com.sa22.trippy.venue_management.interfaces.VenueService;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.NoSuchElementException;
+
+@Service
+public class VenueServiceImpl implements VenueService {
+    private final VenueRepositoryImpl venueRepositoryImpl;
+
+<span class="fc" id="L13">    public VenueServiceImpl(VenueRepositoryImpl venueRepositoryImpl) {</span>
+<span class="fc" id="L14">        this.venueRepositoryImpl = venueRepositoryImpl;</span>
+<span class="fc" id="L15">    }</span>
+
+
+    @Override
+    public List&lt;Venue&gt; getAllVenues() {
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        if (venueRepositoryImpl.getAllVenues() == null ||</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">                venueRepositoryImpl.getAllVenues().isEmpty()) {</span>
+<span class="nc" id="L22">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L24">        return venueRepositoryImpl.getAllVenues();</span>
+    }
+
+    @Override
+    public double getAverageRating(int venueId) {
+<span class="nc bnc" id="L29" title="All 2 branches missed.">        if (venueId &lt; 1) {</span>
+<span class="nc" id="L30">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L32">        List&lt;Double&gt; averageList = venueRepositoryImpl.getAverageRating(venueId);</span>
+<span class="nc" id="L33">        double avg = 0.0;</span>
+<span class="nc bnc" id="L34" title="All 2 branches missed.">        for (Double aDouble : averageList) {</span>
+<span class="nc" id="L35">            avg += aDouble;</span>
+<span class="nc" id="L36">        }</span>
+<span class="nc" id="L37">        avg = avg / averageList.size();</span>
+<span class="nc" id="L38">        return avg;</span>
+    }
+
+    @Override
+    public List&lt;Venue&gt; getVenueByCity(String venueCity) {
+<span class="nc bnc" id="L43" title="All 2 branches missed.">        if (venueRepositoryImpl.findVenueByCity(venueCity) == null) {</span>
+<span class="nc" id="L44">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L46">        return venueRepositoryImpl.findVenueByCity(venueCity);</span>
+    }
+
+
+    @Override
+    public List&lt;Venue&gt; getVenueByType(String venueType) {
+<span class="nc bnc" id="L52" title="All 2 branches missed.">        if (venueRepositoryImpl.findVenueByVenueType(venueType) == null) {</span>
+<span class="nc" id="L53">            throw new NoSuchElementException();</span>
+        }
+<span class="nc" id="L55">        return venueRepositoryImpl.findVenueByVenueType(venueType);</span>
+    }
+
+    @Override
+    public Venue insertVenue(Venue venue) {
+<span class="nc bnc" id="L60" title="All 4 branches missed.">        if (venue.getVenueName().isEmpty() || (venue.getVenueName().length() == 0)</span>
+<span class="nc bnc" id="L61" title="All 4 branches missed.">                || venue.getVenueEmail().isEmpty() || venue.getVenueCity().isEmpty()</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">                || venue.getVenuePhone().isEmpty()) {</span>
+<span class="nc" id="L63">            throw new EmptyInputException();</span>
+        }
+<span class="nc" id="L65">        return venueRepositoryImpl.insertVenue(venue);</span>
+    }
+
+    @Override
+    public int updateVenue(Venue venue, int id) {
+<span class="nc" id="L70">        return 0;</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
