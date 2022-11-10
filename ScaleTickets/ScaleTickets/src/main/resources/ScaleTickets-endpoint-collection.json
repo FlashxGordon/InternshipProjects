@@ -1,0 +1,2637 @@
+{
+	"info": {
+		"_postman_id": "649bd936-1eaf-44ef-9f48-9b838fe3f95b",
+		"name": "ScaleTickets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22636052"
+	},
+	"item": [
+		{
+			"name": "Analytics",
+			"item": [
+				{
+					"name": "Revenue",
+					"item": [
+						{
+							"name": "Total daily revenue sum in date range",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/revenue/total?startDate=2022-09-26&endDate=2022-10-01",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"revenue",
+										"total"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-09-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Daily Revenue by date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/revenue/total?startDate=2022-09-26&endDate=2022-10-01",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"revenue",
+										"total"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-09-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List of daily revenues in date range",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/revenue?startDate=2022-09-26&endDate=2022-10-01",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"revenue"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-09-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List of alll daily revenues in DB",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/revenue?startDate=2022-09-26&endDate=2022-10-01",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"revenue"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-09-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-01"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Revenue by Id",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Income by date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/revenue/income?byDate=2022-10-11",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"revenue",
+										"income"
+									],
+									"query": [
+										{
+											"key": "byDate",
+											"value": "2022-10-11"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Profit",
+					"item": [
+						{
+							"name": "Total daily profits in date range",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/grossProfit/total?startDate=2022-10-04&endDate=2022-10-05",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"grossProfit",
+										"total"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-10-04"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-05"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Profits",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/grossProfit",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"grossProfit"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Daily Profit By Date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/grossProfit?byDate=2022-09-30",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"grossProfit"
+									],
+									"query": [
+										{
+											"key": "byDate",
+											"value": "2022-09-30"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Daily Profits In Date Range",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/grossProfit?startDate=2022-09-21&endDate=2022-09-30",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"grossProfit"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-09-21"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-09-30"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Total Profits In Date Range",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/grossProfit/total?startDate=2022-10-10&endDate=2022-10-20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"grossProfit",
+										"total"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-10-10"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-20"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Expenses",
+					"item": [
+						{
+							"name": "Total daily expenses in date range",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "By expense date",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "By Expense Date Greater Than",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "By Expense Date Before",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/expenses?byDateBefore=2022-10-20",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"expenses"
+									],
+									"query": [
+										{
+											"key": "byDateBefore",
+											"value": "2022-10-20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "By Expense Date Between",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/expenses?startDate=2022-10-10&endDate=2022-10-20",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"expenses"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2022-10-10"
+										},
+										{
+											"key": "endDate",
+											"value": "2022-10-20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Calculate Daily Expenses Between",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Calculate Daily Expenses For Specific Date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/expenses/?expensesDate=2022-10-24",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"expenses",
+										""
+									],
+									"query": [
+										{
+											"key": "expensesDate",
+											"value": "2022-10-24"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Calculation Override",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8087/api/v1/override",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"v1",
+								"override"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Date range comparison",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Business operations",
+			"item": [
+				{
+					"name": "Buses",
+					"item": [
+						{
+							"name": "Bus by plate",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?plate=PB1213MK",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "plate",
+											"value": "PB1213MK"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Daily Cost Sum of Buses",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses/dailyCost",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses",
+										"dailyCost"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Capacity Less Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?capacityLessThan=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "capacityLessThan",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Capacity Greater Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?capacityGreaterThan=15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "capacityGreaterThan",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Capacity Equals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?capacity=30",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "capacity",
+											"value": "30"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Daily Cost Less Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?dailyCostLessThan=160",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "dailyCostLessThan",
+											"value": "160"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Daily Cost Greater Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?dailyCostGreaterThan=150",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "dailyCostGreaterThan",
+											"value": "150"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Daily Cost Equals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?dailyCost=100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "dailyCost",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Capacity and Daily Cost Equals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?capacity=30&dailyCost=200",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "capacity",
+											"value": "30"
+										},
+										{
+											"key": "dailyCost",
+											"value": "200"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Bus",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"busPlate\":\"PB1518AP\",\r\n   \"busCapacity\": 40,\r\n   \"dailyCost\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buses by Capacity and Update Daily Cost",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"dailyCost\": 500.40\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?plate=CA1234MK",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "plate",
+											"value": "CA1234MK"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses?plate=PB1515PB",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									],
+									"query": [
+										{
+											"key": "plate",
+											"value": "PB1515PB"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All busses",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Bus by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/buses/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"buses",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Trips",
+					"item": [
+						{
+							"name": "Detailed Trips",
+							"item": [
+								{
+									"name": "Detailed Trip By Id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8087/api/v1/detailedTrips/41",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8087",
+											"path": [
+												"api",
+												"v1",
+												"detailedTrips",
+												"41"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Detailed Trips",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8087/api/v1/detailedTrips",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8087",
+											"path": [
+												"api",
+												"v1",
+												"detailedTrips"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Detailed Trips After Date",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8087/api/v1/detailedTrips/afterDate?minimumDepartureDate=2022-10-17&departureCity=Sofia&arrivalCity=Burgas&minimumRemainingSeats=3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8087",
+											"path": [
+												"api",
+												"v1",
+												"detailedTrips",
+												"afterDate"
+											],
+											"query": [
+												{
+													"key": "minimumDepartureDate",
+													"value": "2022-10-17"
+												},
+												{
+													"key": "departureCity",
+													"value": "Sofia"
+												},
+												{
+													"key": "arrivalCity",
+													"value": "Burgas"
+												},
+												{
+													"key": "minimumRemainingSeats",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Detailed Trips By Route",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8087/api/v1/routes/2/detailedTrips",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8087",
+											"path": [
+												"api",
+												"v1",
+												"routes",
+												"2",
+												"detailedTrips"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Detailed Trips By Bus",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8087/api/v1/buses/2/detailedTrips",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8087",
+											"path": [
+												"api",
+												"v1",
+												"buses",
+												"2",
+												"detailedTrips"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Detailed Trips By Driver",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8087/api/v1/drivers/2/detailedTrips",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8087",
+											"path": [
+												"api",
+												"v1",
+												"drivers",
+												"2",
+												"detailedTrips"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Add Trip",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"departureDate\": \"2022-09-30T15:00:00\",\r\n    \"routeID\": 2,\r\n    \"busID\": 1,\r\n    \"driverID\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/detailedTrips",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"detailedTrips"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Trip",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"departureDate\": \"2022-10-30T15:00:00\",\r\n    \"routeID\": 2,\r\n    \"busID\": 1,\r\n    \"driverID\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/detailedTrips/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"detailedTrips",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/detailedTrips/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"detailedTrips",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Trip By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/trips/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Trips",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/trips",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"trips"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Trips After Date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/trips/afterDate?minimumDepartureDate=2022-10-10&arrivalCity=Burgas&minimumRemainingSeats=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"afterDate"
+									],
+									"query": [
+										{
+											"key": "minimumDepartureDate",
+											"value": "2022-10-10"
+										},
+										{
+											"key": "arrivalCity",
+											"value": "Burgas"
+										},
+										{
+											"key": "minimumRemainingSeats",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Drivers",
+					"item": [
+						{
+							"name": "Drivers by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/drivers/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Drivers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Driver By First Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?firstName=Dimitar",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "firstName",
+											"value": "Dimitar"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Driver By Last Name",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?lastName=Petrov",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "Petrov"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Driver By Daily Wage Less Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?dailyWageLessThan=1000",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "dailyWageLessThan",
+											"value": "1000"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Driver By Daily Wage Equals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?dailyWageEquals=100",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "dailyWageEquals",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Driver By Daily Wage Greater Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?dailyWageGreaterThan=50",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "dailyWageGreaterThan",
+											"value": "50"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Driver By Phone Number",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?phoneNumber=+359899932102",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "phoneNumber",
+											"value": "+359899932102"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Driver By Phone Number",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers?phoneNumber=+359898243405",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									],
+									"query": [
+										{
+											"key": "phoneNumber",
+											"value": "+359898243405"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Driver",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"firstName\": \"Test\",\r\n\"lastName\": \"Test\",\r\n\"phoneNumber\": \"+359875478124\",\r\n\"dailyWage\": 50.40\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8087/api/v1/drivers",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"drivers"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Tickets",
+					"item": [
+						{
+							"name": "Ticket purchase Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"clientName\":\"Dimitar Chardakliev\",\r\n    \"email\":\"chardaklievdimitar@gmail.com\",\r\n    \"phoneNumber\":\"+359899932102\",\r\n    \"tripId\":\"21\",\r\n    \"discountCode\":\"scale10\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8087/api/v1/tickets",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tickets before departure date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/tickets/beforeDepartureDateTime?date=2022-10-17T09:00:00",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets",
+										"beforeDepartureDateTime"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-10-17T09:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Tickets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/tickets",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ticket By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/tickets/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"tickets",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Filter Tickets By Params",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/tickets?lastName=Chardakliev&firstName=Dimitar",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets"
+									],
+									"query": [
+										{
+											"key": "lastName",
+											"value": "Chardakliev"
+										},
+										{
+											"key": "firstName",
+											"value": "Dimitar"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tickets before Arrival DateTime",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/tickets/beforeArrivalDate?date=2022-10-17T09:00:00",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets",
+										"beforeArrivalDate"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-10-17T09:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tickets After/On Departure DateTime",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/tickets/afterOnDepartureDateTime?date=2022-10-17T09:00:00",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets",
+										"afterOnDepartureDateTime"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-10-17T09:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Tickets After/On Arrival Date",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/tickets/afterOnArrivalDate?date=2022-10-17T09:00:00",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"tickets",
+										"afterOnArrivalDate"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2022-10-17T09:00:00"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Discount coupons",
+					"item": [
+						{
+							"name": "Add discount code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"percentage\":10,\r\n\"code\":\"testcode10\",\r\n\"expirationDate\":\"2022-10-15\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8087/api/v1/discounts",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Discount Coupons",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/discounts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Discounts By Expiration Date On And After",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/discounts?expirationDateAfterAndOn=2022-10-14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts"
+									],
+									"query": [
+										{
+											"key": "expirationDateAfterAndOn",
+											"value": "2022-10-14"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Discounts By Expiration Date Before",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/discounts?expirationDateBefore=2022-10-18",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts"
+									],
+									"query": [
+										{
+											"key": "expirationDateBefore",
+											"value": "2022-10-18"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Discount By Code",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/discounts?code=scale10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts"
+									],
+									"query": [
+										{
+											"key": "code",
+											"value": "scale10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Discount By Code and Expiration On And Equal",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Discount By Code and Update Expiration Date",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"percentage\": 25,\r\n\"code\": \"scale10\",\r\n\"expirationDate\": \"2022-10-20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/discounts?code=scale10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts"
+									],
+									"query": [
+										{
+											"key": "code",
+											"value": "scale10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Discount by Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8087/api/v1/discounts/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"discounts",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Routes",
+					"item": [
+						{
+							"name": "All routes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Route By Departure City",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Route By Arrival City",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes?arrivalCity=Sofia",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "arrivalCity",
+											"value": "Sofia"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "By Trip Price Greater Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes?priceGreaterThan=30",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "priceGreaterThan",
+											"value": "30"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "By Trip Price Equals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes?priceEquals=50",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "priceEquals",
+											"value": "50"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "By Trip Price Less Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes?priceLessThan=150",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "priceLessThan",
+											"value": "150"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "By Departure City And Arrival City",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes/?departureCity=Sofia&arrivalCity=Varna",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes",
+										""
+									],
+									"query": [
+										{
+											"key": "departureCity",
+											"value": "Sofia"
+										},
+										{
+											"key": "arrivalCity",
+											"value": "Varna"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Route By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes?id=1",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Route",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"departureCity\" : \"Plovdiv\",\r\n\"arrivalCity\" : \"Sofia\",\r\n\"tripPrice\" : \"45\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8087/api/v1/routes",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update route",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"departureCity\":\"Sofija\",\r\n\"arrivalCity\" : \"Skopje\",\r\n\"tripPrice\" :\"144\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8087/api/v1/routes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete route",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8087/api/v1/routes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"routes",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User point of contact",
+			"item": [
+				{
+					"name": "Security",
+					"item": [
+						{
+							"name": "Login user request",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8087/api/v1/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Register user request",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"username\":\"testAdmin\",\r\n\"email\":\"testAdmin@scaletickets.com\",\r\n\"password\":\"1234test\",\r\n\"securityCode\":\"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8087/api/v1/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8087/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add security code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"code\" : \"cpde20\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8087/api/v1/code",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"code"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Security Code",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var xsrfCookie = postman.getResponseCookie(\"XSRF-TOKEN\");\r",
+											"postman.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "X-XSRF-TOKEN",
+										"value": "{{xsrf-token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8087/api/v1/code/?ID=1",
+									"host": [
+										"localhost"
+									],
+									"port": "8087",
+									"path": [
+										"api",
+										"v1",
+										"code",
+										""
+									],
+									"query": [
+										{
+											"key": "ID",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ticket purchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientName\":\"Dimitar Chardakliev\",\r\n    \"email\":\"chardaklievdimitar@gmail.com\",\r\n    \"phoneNumber\":\"+359899932102\",\r\n    \"tripId\":\"21\",\r\n    \"discountCode\":\"scale10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8087/api/v1/tickets",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"v1",
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Trips",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8087/api/v1/trips",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"api",
+								"v1",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
