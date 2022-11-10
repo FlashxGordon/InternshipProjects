@@ -79,9 +79,9 @@ and Run Unit Tests
 
 **Authors**
 
-* Angela Fisher - angelafisher1996@gmail.com
-* Dimitar Chardakliev - chardaklievdimitar@gmail.com
-* Erkan Kamber - erkan.kamber0@gmail.com
-* Pavlin Minkov - pmminkov01@gmail.com
-* Kristina Lajmanovska - lajmanovska.kristina@gmail.com
+* Angela Fisher 
+* Dimitar Chardakliev 
+* Erkan Kamber 
+* Pavlin Minkov 
+* Kristina Lajmanovska
 
